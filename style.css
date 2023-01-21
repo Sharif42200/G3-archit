@@ -281,7 +281,7 @@ ul li {
 
 .facts-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     margin-bottom: 100px;
 }
@@ -294,13 +294,14 @@ ul li {
     /* padding: 5vw; */
     height: 150px;
     width: 150px;
+    /* width: 100%; */
     transition: width 2s, height 2s, transform 2s;
 
 }
 
-.facts-box:hover{
-    height: 200px;
-    width: 200px;
+.facts-box:hover {
+    height: 180px;
+    width: 180px;
     transform: rotate(360deg);
 }
 
@@ -320,6 +321,123 @@ ul li {
     font-size: 20px;
     color: #727272;
 
+}
+
+
+/* -------- */
+/* sponsors-section styles */
+/* -------- */
+
+.sponsors-section {
+    margin-top: 150px;
+}
+
+.sponsors {
+    margin-left: 15px;
+    /* text-align: center; */
+    display: grid;
+    text-align: center;
+}
+
+.sponsors-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+
+.sponsors-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+
+.sponsors-img {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+
+/* --------- */
+/* about-architect styles */
+/* --------- */
+
+.about-architect {
+    margin-top: 100px;
+}
+
+.architect {
+    margin-left: 15px;
+    margin-bottom: 50px;
+    display: grid;
+    text-align: center;
+}
+
+.architect-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+
+.architect-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+
+.architect-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.architect-quotes {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    border: 1px solid gray;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px gray;
+    padding: 25px 15px 20px 15px;
+    text-align: center;
+    /* transform: scale(1); */
+    transition: transform 2s;
+    /* margin-bottom: 50px; */
+
+}
+
+.architect-quotes:hover {
+    color: #FFFFFF;
+    background-color: #FF900E;
+    transform: scale(0.7);
+}
+
+/* ------- */
+/* footer styles */
+/* -------- */
+
+footer {
+    margin-top: 100px;
+    background: #FFF4E7;
+    border: 1px solid gray;
+    border-style: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.credit {
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+    text-align: center;
+    padding: 40px 0px;
+    width: 100%;
 }
 
 /* --------- */
@@ -382,8 +500,20 @@ ul li {
     /* facts responsive */
 
     .facts-container {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         /* gap:0; */
     }
 
+    /* sponsors section styles */
+
+    .sponsors-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* about-architect styles */
+
+    .architect-box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
 }
